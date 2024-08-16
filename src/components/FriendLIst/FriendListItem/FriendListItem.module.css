@@ -1,0 +1,20 @@
+.friendList-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 15px;
+}
+.friendList-item_name {
+  padding: 8px 0;
+  font-weight: 700;
+}
+
+.online {
+  color: green;
+}
+.offline {
+  color: red;
+}

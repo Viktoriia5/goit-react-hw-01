@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.user-card {
+  font-family: "Ubuntu Sans", sans-serif;
+  width: 25vw;
+  margin: 0 auto;
+  line-height: 1.2;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-top: 8px;
+}
+
+.user-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0;
+  padding-bottom: 8px;
+}
+.user-img img {
+  background-color: gray;
+  border-radius: 50%;
+  max-height: 150px;
+  width: fit-content;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.user-img p {
+  color: cadetblue;
+}
+.user-img p:nth-child(2) {
+  color: black;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: large;
+}
+.user-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border-top: 1px solid gray;
+  background-color: rgb(228, 226, 226);
+}
+.user-stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  width: 33.33%;
+}
+.user-stats li:not(:last-child) {
+  margin-right: 8px;
+  border-right: 1px solid gray;
+}
+.user-stats li span:first-child {
+  font-weight: 600;
+}
+.user-stats li span:last-child {
+  font-weight: 900;
+}
